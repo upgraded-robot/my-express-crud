@@ -1,0 +1,11 @@
+<blockquote>
+	<h1>{{quote.quote}}</h1>
+	{{#if author}}
+			Author: {{quote.author}}
+	{{/if}}
+	{{#if source}}
+			Source: {{quote.source}}
+	{{/if}}
+	<a class="btn btn-default" href="/quotes/{{quote._id}}/destroy">Delete</a>
+	<a class="btn btn-default" href="/quotes/{{quote._id}}/edit">Edit</a>
+</blockquote>		

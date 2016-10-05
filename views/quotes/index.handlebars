@@ -1,0 +1,19 @@
+<div class="row">
+	{{#each quotes}}
+	<div class="col-md-6">
+		<blockquote>
+			<p>{{quote}}</p>
+			
+			<a class="btn btn-default pull-right" href="quotes/{{_id}}">View</a>
+			<footer>
+				{{#if source}}
+				Source: {{source}}
+				{{/if}}
+				{{#if author}}
+					Author: {{author}}
+				{{/if}}
+			</footer> 
+		</blockquote>
+	</div> 
+	{{/each}}
+</div>
